@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Micro-Clinics</title>
+    <link rel="icon" type="image/png" href="~/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="~/lib/aos/aos.css" rel="stylesheet">
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/lib/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body class="d-flex flex-column h-100">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top @(ViewData["Title"].ToString() == "Home" ? "" : "shadow-sm")">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a class="logo d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/images/logo.png" alt="logo">
+                <span>Micro-Clinics</span>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li>
+                        <a class="nav-link scrollto @(ViewData["Title"].ToString() == "Home" ? "active" : "")"
+                           asp-area="" asp-controller="Home" asp-action="Index">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link @(ViewData["Title"].ToString() == "Patient" ? "active" : "")"
+                           asp-area="" asp-controller="Secured" asp-action="Patient">
+                            Patient
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link @(ViewData["Title"].ToString() == "Doctor" ? "active" : "")"
+                           asp-area="" asp-controller="Secured" asp-action="Doctor">
+                            Doctor
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="@(ViewData["Title"].ToString() == "Register as doctor" || ViewData["Title"].ToString() == "Register as patient" ? "active" : "")">
+                            <span>Register</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a asp-area="" asp-controller="Auth" asp-action="RegisterDoctor">
+                                    As Doctor
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Auth" asp-action="RegisterPatient">
+                                    As Patient
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="getstarted" asp-area="" asp-controller="Auth" asp-action="Login">Login</a>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <main role="main" class="flex-shrink-0">
+        @RenderBody()
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-primary text-white">
+        <div class="container text-center">
+            &copy; <script>document.write(new Date().getFullYear())</script> -
+            <a class="link-light text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">Micro-Clinics</a>.
+            Designed by <strong>GOL G2</strong>.
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="~/lib/purecounter/purecounter.js"></script>
+    <script src="~/lib/aos/aos.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/glightbox/js/glightbox.min.js"></script>
+    <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="~/lib/php-email-form/validate.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,264 @@
+﻿@{
+    ViewData["Title"] = "Patient";
+}
+
+<div class="container mt-5 mb-2">
+    <div class="row">
+        <!-- Appointments Start -->
+        <div class="col-12 col-lg-3 mb-4">
+            <div class="rounded border border-1 px-3 pt-3 pb-0">
+                <!-- Title -->
+                <h5 class="mb-3">My Appointments</h5>
+
+                <!-- Cards -->
+                <div class="row">
+                    <!-- Card Item Start -->
+                    <div class="col-12 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Popins Marry</h5>
+                                <div class="d-flex justify-content-between align-items-center mb-0">
+                                    <h6 class="text-muted fw-light pt-2 mb-0" title="Approved" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                        <i class="fas fa-circle text-success me-2"></i>
+                                        December 15 at 2:00 PM
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                    <!-- Card Item Start -->
+                    <div class="col-12 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Popoola Jessica</h5>
+                                <div class="d-flex justify-content-between align-items-center mb-0">
+                                    <h6 class="text-muted fw-light pt-2 mb-0" title="Pending" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                        <i class="fas fa-circle text-warning me-2"></i>
+                                        December 17 at 8:00 AM
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                    <!-- Card Item Start -->
+                    <div class="col-12 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Adeke Amy</h5>
+                                <div class="d-flex justify-content-between align-items-center mb-0">
+                                    <h6 class="text-muted fw-light pt-2 mb-0" title="Pending" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                        <i class="fas fa-circle text-warning me-2"></i>
+                                        December 21 at 7:00 PM
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                </div>
+            </div>
+        </div>
+        <!-- =============== Appointments End =============== -->
+        <!-- =============== Doctors List Start =============== -->
+        <div class="col-12 col-lg-6 mb-4">
+            <div class="rounded border border-1 px-3 pt-3 pb-0">
+                <!-- Search form -->
+                <form>
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control border-primary" name="query" placeholder="Search doctors by name or specialization..."
+                               aria-label="Search doctors by name or specialization..." aria-describedby="search-icon" />
+                        <button type="submit" class="btn btn-primary" id="search-icon">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Title -->
+                <h5 class="my-4">Doctors</h5>
+
+                <div class="row">
+                    <!-- Card Item Start -->
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Popoola Jessica</h5>
+                                <div class="mb-1 text-muted">Neurologist</div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="ratings">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <h6 class="text-muted fw-light pt-2">46 Reviews</h6>
+                                </div>
+                                <div>
+                                    <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0 mt-1">
+                                        <li class="me-auto">
+                                            <img src="~/images/doctor-1.jpg" alt="Dr Popoola Jessica" width="80" height="80" class="rounded-circle border border-1">
+                                        </li>
+                                        <li class="text-end align-bottom">
+                                            <button class="btn btn-outline-primary btn-sm rounded-pill">
+                                                Consult
+                                                <i class="fal fa-long-arrow-right"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                    <!-- Card Item Start -->
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Popins Marry</h5>
+                                <div class="mb-1 text-muted">Cardiologist</div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="ratings">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <h6 class="text-muted fw-light pt-2">12 Reviews</h6>
+                                </div>
+                                <div>
+                                    <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0 mt-1">
+                                        <li class="me-auto">
+                                            <img src="~/images/doctor-2.jpg" alt="Dr Popins Marry" width="80" height="80" class="rounded-circle border border-1">
+                                        </li>
+                                        <li class="text-end align-bottom">
+                                            <button class="btn btn-outline-primary btn-sm rounded-pill">
+                                                Consult
+                                                <i class="fal fa-long-arrow-right"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                    <!-- Card Item Start -->
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Adeke Amy</h5>
+                                <div class="mb-1 text-muted">Pediatrist</div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="ratings">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <h6 class="text-muted fw-light pt-2">9 Reviews</h6>
+                                </div>
+                                <div>
+                                    <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0 mt-1">
+                                        <li class="me-auto">
+                                            <img src="~/images/doctor-3.jpg" alt="Dr Adeke Amy" width="80" height="80" class="rounded-circle border border-1">
+                                        </li>
+                                        <li class="text-end align-bottom">
+                                            <button class="btn btn-outline-primary btn-sm rounded-pill">
+                                                Consult
+                                                <i class="fal fa-long-arrow-right"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                </div>
+            </div>
+        </div>
+        <!-- =============== Doctors List End =============== -->
+        <!-- =============== Rate Service Start =============== -->
+        <div class="col-12 col-lg-3 mb-4">
+            <div class="rounded border border-1 px-3 pt-3 pb-0">
+                <!-- Title -->
+                <h5 class="mb-3">Rate Service</h5>
+
+                <!-- Cards -->
+                <div class="row">
+                    <!-- Card Item Start -->
+                    <div class="col-12 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Popoola Jessica</h5>
+                                <div class="mb-1 text-muted">Neurologist</div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="ratings">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <h6 class="text-muted fw-light pt-2">46 Reviews</h6>
+                                </div>
+                                <div>
+                                    <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0 mt-1">
+                                        <li class="me-auto">
+                                            <img src="~/images/doctor-1.jpg" alt="Dr Popoola Jessica" width="80" height="80" class="rounded-circle border border-1">
+                                        </li>
+                                        <li class="text-end align-bottom">
+                                            <button class="btn btn-outline-primary btn-sm rounded-pill">
+                                                Rate
+                                                <i class="fas fa-star"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                    <!-- Card Item Start -->
+                    <div class="col-12 mb-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h5 class="mb-1 text-primary">Dr Popins Marry</h5>
+                                <div class="mb-1 text-muted">Cardiologist</div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="ratings">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <h6 class="text-muted fw-light pt-2">12 Reviews</h6>
+                                </div>
+                                <div>
+                                    <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0 mt-1">
+                                        <li class="me-auto">
+                                            <img src="~/images/doctor-2.jpg" alt="Dr Popins Marry" width="80" height="80" class="rounded-circle border border-1">
+                                        </li>
+                                        <li class="text-end align-bottom">
+                                            <button class="btn btn-outline-primary btn-sm rounded-pill">
+                                                Rate
+                                                <i class="fas fa-star"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Item End -->
+                </div>
+            </div>
+        </div>
+        <!-- =============== Rate Service End =============== -->
+    </div>
+</div>

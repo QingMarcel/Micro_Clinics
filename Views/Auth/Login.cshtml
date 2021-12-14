@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container auth-container py-5">
+    <div class="login-form">
+        <div class="card shadow-lg">
+            <div class="text-center pt-3 mx-3">
+                <h1 class="display-1 text-secondary">
+                    <i class="fad fa-user-circle"></i>
+                    </h1>
+                <p class="lead">Log into your account</p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <!-- Email input -->
+                    <div class="input-group mb-4">
+                        <span class="input-group-text text-muted" id="username-icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <input type="text" class="form-control" name="username" placeholder="Username or email address" aria-label="Username or email address" aria-describedby="username-icon" />
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="input-group mb-4">
+                        <span class="input-group-text text-muted" id="password-icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <input type="password" class="form-control" name="password" placeholder="Password" aria-label="Password" aria-describedby="password-icon" />
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary w-100 mb-2">Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
